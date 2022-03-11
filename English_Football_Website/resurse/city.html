@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css">    
+    <link rel="icon" href="city.png">
+<title>Manchester City</title>
+</head>
+<body style="background-color:#ccc">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" font-size:1.75vw;">&times;</a>
+  <a href="../index.html">Informatii</a>
+  <a href="chels.html">Chelsea</a>
+    <a href="#">Manchester City</a>
+  <a href="gg.html">Clasament Golgheteri</a>
+  <a href="cp.html">Echipe Campioane</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="meniu" class="main">
+    <span style="font-size:30px;cursor:pointer; font-size:1.25vw;" id="butonmeniu" onclick="openNav()">&#9776;</span>
+    <img src="city.png" style="max-width: 13%; margin:auto; display:block;"><br>
+    <div class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manchester City Footbal Club a luat fiițnă în anul 1880 sub numele St. Mark's West Gorton la inițiativa membrilor bisericii St. Mark's Church of England, West Gorton, Manchester. Pe fondul unui șomaj ridicat au apărut probleme sociale foarte mari ca alcolismul și violența între anumite bande. Arthur Connell (rectorul Bisericii St. Mark) și fiica acestuia Anne Connel s-au implicat în reducerea acestor probleme și prin urmare au creat un club de cricket în 1875. În 1880 doi paznici ai bisericii St Mark -William Beastow și Thomas Goodbehere- au creat și o echipă de fotbal numită "St. Mark's West Gorton". Uneori aceasta era numită West Gorton (St Mark's).<br>
+
+La 13 noiembrie 1880, St. Mark's West Gorton a susținut primul meci de fotbal împotriva echipei de fotbal a bisericii din Macclesfield, s-a încheiat cu o înfrângere (scor 1-2).<br>
+
+În 1884, clubul a fuzionat cu o altă echipă Gorthon Athletic, însă această fuziune a durat câteva luni. West Gorton se va numi Gorton Association Football Club, iar Gorton Athletic va deveni West Gorton Athletic.<br>
+
+În 1887 Gorton A.F.C. a devenit un club profesionist, mutându-se pe Stadionul Hyde Road, ceea ce a condus la schimbarea numelui în Ardwick Association Football Club pentru a reflecta noua locație din partea de Est a orașului. Primul meci pe Hyde Road a fost programat să fie împotriva echipei Salford A.F.C. la 10 septembrie 1887. în 1891, Ardwick A.F.C. reușește să cucereacă primul trofeu Manchester Cup învingând echipa concitadină Newton Heath L.Y.R. cu 1-0. Drept urmare Ardwick A.F.C. este admisă în Football Alliance. Ca urmare a fuziunii a Football Alliance cu Football League, Ardwick A.F.C. devine membru fondator al Football League Second Division.<br>
+        <br>
+    </div>
+<div class="textmare"><center>Stadion</center><br></div>
+<div class="text">
+<poza>
+<img src="etihad.png" style="max-width: 100%;">
+<textpoza>
+<center>Stadionul "City of Manchester" sau Etihad</center>
+</textpoza>
+</poza>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stadionul City of Manchester (cunoscut și ca Stadionul Etihad din motive de sponsorizare) este un stadion de fotbal din Manchester, Anglia. Aici își dispută meciurile de acasă echipa Manchester City F.C.. El este al 5-lea stadion după mărime din Premier League și al 12-lea după mărime din Marea Britanie, având o capacitate de 55.097.<br>
+<br><br><br>
+    <br><br><br><br><br><br><br><br>
+</div>
+<div class="textmare"><center>Jucatori importanti</center><br></div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="kompany.jpg" style="width:100%" class="imgcarusel">
+  <div class="textcarusel">Vincent Kompany</div>
+</div>
+<div class="mySlides fade">
+  <img src="aguero.jpg" style="width:100%" class="imgcarusel">
+  <div class="textcarusel">Sergio Aguero</div>
+</div>
+<div class="mySlides fade">
+  <img src="bruyne.jpg" style="width:100%; max-height:50%;" class="imgcarusel">
+  <div class="textcarusel">Kevin De Bruyne</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "13%";
+    document.getElementById("meniu").style.paddingLeft="13%";
+    document.getElementById("butonmeniu").style.color="#ccc";
+}
+
+function closeNav() {
+    document.getElementById("meniu").style.paddingLeft="0";
+  document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("butonmeniu").style.color="black";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css">  
+<link rel="icon" href="logo.png">
+<title>Contact</title>
+</head>
+<body style="background-color:#ccc">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" font-size:1.75vw;">&times;</a>
+   <a href="../index.html">Informatii</a>
+  <a href="chels.html">Chelsea</a>
+    <a href="city.html">Manchester City</a>
+  <a href="#">Clasament Golgheteri</a>
+  <a href="cp.html">Echipe Campioane</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="meniu" class="main">
+    <span style="font-size:30px;cursor:pointer;font-size:1.25vw;" id="butonmeniu" onclick="openNav()">&#9776;</span>
+<div class="text">
+<div class="textmare">
+    </div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Nume</label>
+    <input type="text" id="fname" name="firstname" placeholder="Numele dumneavoastra..">
+
+    <label for="lname">Prenume</label>
+    <input type="text" id="lname" name="lastname" placeholder="Prenumele dumneavoastra..">
+
+
+    <label for="subject">Sugestii</label>
+    <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+
+
+
+  </form>
+        <button onclick="alert('Am trimis sugestia!')">Trimite</button>
+</div>
+</div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "13%";
+    document.getElementById("meniu").style.paddingLeft="13%";
+    document.getElementById("butonmeniu").style.color="#ccc";
+}
+
+function closeNav() {
+    document.getElementById("meniu").style.paddingLeft="0";
+  document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("butonmeniu").style.color="black";
+}
+</script>
+</body>
+</html>
